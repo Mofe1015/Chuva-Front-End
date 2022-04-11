@@ -49,6 +49,12 @@
     display: flex;
     padding-left: 22px;
 }
+.menu-item-ativado{
+    background-color: #FDF1EB;
+    border-left: 4px solid #ED7839 ;
+    padding-left: 18px;
+
+}
 .menu-item-desaivado:hover{
     background-color: #FDF1EB ;
 }
