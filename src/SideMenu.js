@@ -16,18 +16,23 @@ function SideMenuTop(){
     );
 };
 function SideBar(){
+    const [active, setActive] = React.useState("menuitm5")
+    
     function select(evt){
-        
+        // Getting clicked menu item id
         var clickedId = evt.target.id
-        document.getElementById('menuitm1').classList.remove("menu-item-ativado");;
-        document.getElementById('menuitm2').classList.remove("menu-item-ativado");;
-        document.getElementById('menuitm3').classList.remove("menu-item-ativado");;
-        document.getElementById('menuitm4').classList.remove("menu-item-ativado");;
-        document.getElementById('menuitm5').classList.remove("menu-item-ativado");;
-        document.getElementById('menuitm6').classList.remove("menu-item-ativado");;
-
+        setActive(prevActive => {
+            // Deactivating old menu item
+            document.getElementById(prevActive).classList.remove("menu-item-ativado");;
+            // Setting new clicked menu item id
+            return(
+               clickedId
+        )
+        });
+        // Activating new clicked menu item 
         document.getElementById(clickedId).classList.add("menu-item-ativado");
     }
+
     return(
         <div className='side-bar'>
             <div id='menuitm1' className='menu-item-desaivado' onClick={select}>
