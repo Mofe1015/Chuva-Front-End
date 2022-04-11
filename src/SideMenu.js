@@ -1,6 +1,6 @@
 import React from 'react';
 import './SideMenu.css';
-import { AiOutlineMenu } from "react-icons/ai";
+
 
 function SideMenuTop(){
     return(
@@ -17,6 +17,7 @@ function SideMenuTop(){
         </div>
     );
 };
+
 function SideBar(){
     const [active, setActive] = React.useState("menuitm5")
     
@@ -65,14 +66,8 @@ function SideBar(){
 };
 
 function SideMenu() {
-    function showSideMenu(){
-        document.getElementById('sidemenuid').style.display = "block"
-    }
   return (
     <>
-        <div  className='show-side-menu'>
-            <AiOutlineMenu className='menu-drop-down' onClick={showSideMenu}/>
-        </div>
         <div id='sidemenuid' className="side-menu">
             <SideMenuTop/>
             <SideBar/>
