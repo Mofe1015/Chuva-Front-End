@@ -1,18 +1,20 @@
 import React from 'react';
 import './SideMenu.css';
+import { AiOutlineMenu } from "react-icons/ai";
 
 function SideMenuTop(){
     return(
-        <>
-        <div className='Rectangle-239'>
-            <p>
-                SLACA 2019
-            </p>
+        <div className='side-menu-top'>  
+            <div className='Rectangle-239'>
+                <p>
+                    SLACA 2019
+                </p>
+            </div>
+            <div className='dewey4'>
+                <img src={require('./images/dewey4.png') }></img>
+            
+            </div>
         </div>
-        <div className='dewey4'>
-            <img src={require('./images/dewey4.png') }></img>
-        </div>
-        </>
     );
 };
 function SideBar(){
@@ -63,11 +65,19 @@ function SideBar(){
 };
 
 function SideMenu() {
+    function showSideMenu(){
+        document.getElementById('sidemenuid').style.display = "block"
+    }
   return (
-    <div className="side-menu">
-        <SideMenuTop/>
-        <SideBar/>
-    </div>
+    <>
+        <div  className='show-side-menu'>
+            <AiOutlineMenu className='menu-drop-down' onClick={showSideMenu}/>
+        </div>
+        <div id='sidemenuid' className="side-menu">
+            <SideMenuTop/>
+            <SideBar/>
+        </div>
+    </>
   );
 };
 
