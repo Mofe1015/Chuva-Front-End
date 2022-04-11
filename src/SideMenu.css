@@ -1,0 +1,29 @@
+.side-menu{
+    position: absolute;
+    width: 220px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: green;
+}
+
+.Rectangle-239{
+    width: 220px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+}
+
+.Rectangle-239 > p{
+    font-size: 30px;
+    font: Roboto;
+    font-weight: 700, bold;
+    align-self: center;
+    color: #FFFF;
+}
