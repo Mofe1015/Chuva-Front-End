@@ -85,8 +85,8 @@
 .video-details-btm-txt1{
     font: Roboto;
     font-weight: 550;
-    font-size: 2.2vw;
-    line-height: 2.2vw;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
     color: white;
     padding: 0;
     margin: 0;
@@ -94,8 +94,8 @@
 .video-details-btm-txt2{
     font: Roboto;
     font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 1.8vw;
+    line-height: 1.8vw;
     color: white;
     padding: 0;
     margin: 0;
@@ -104,4 +104,15 @@
 .details-download-div{
     width: 20%;
     background-color: green;
+}
+
+@media only screen and (max-width: 1200px) {
+    .top-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .video-details-top{
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
 }
