@@ -7,6 +7,7 @@ import { MdCancel } from "react-icons/md";
 
 
 function SideMenuTop(){
+    // Hide side menu in mobile
     function hideSideMenu(){
         document.getElementById('sidemenuid').style.display = "none"
     }

@@ -1,0 +1,15 @@
+.content{
+    width: 100%;
+    height: 1000px;
+    background-color: blue;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+.topcontent{
+    margin-right: 50px;
+    width: 92%;
+    height: 700px;
+    background-color: green;
+}

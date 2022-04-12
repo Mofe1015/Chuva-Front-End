@@ -10,7 +10,7 @@
     display: none;
 }
 .header-text-cont{
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 10px;
     max-height: 67px;
     width: 50vw;
@@ -83,20 +83,18 @@
 }
 
 .notification{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    width: 10px;
+    width: 13px;
     background-color: red;
     color: white;
     font-size: 10px;
-    margin-top: -4px;
+    margin-bottom: -10px;
     margin-left: 20px;
-    
 }
 .login-img > img{
-    z-index: -1;
     width: 100%;
     border-radius:45%;
     cursor: pointer;
