@@ -17,17 +17,33 @@ function BodyHeader(){
                 <AiOutlineMenu className='menu-drop-down' onClick={showSideMenu}/>
             </div>
 
-            <div className='header-text-cont'>
-                 <p className='header-text-cont-p'>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
-                 <p className='header-text-cont-p' style={{fontSize:"1.4vw"}}>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
-                 <p className='header-text-cont-p'>ISSN: 1234-5678</p>
-            </div>
+            <>
+                <div className='header-title-small'>
+                    <p>
+                        SLACA 2019
+                    </p>
+                </div>
+                
+                <div className='header-text-cont'>
+                    <p className='header-text-cont-p'>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
+                    <p className='header-text-cont-p' style={{fontSize:"1.4vw"}}>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
+                    <p className='header-text-cont-p'>ISSN: 1234-5678</p>
+                </div>
+            </>
 
-            <div className='botão-idiomas'>
-                <MdOutlineLanguage/>
-                <p>PT,BR</p>
-                <MdArrowDropDown/>
-            </div>
+            <>
+                <div className='botão-idiomas-small'>
+                    <MdOutlineLanguage/>
+                </div>
+
+                <div className='botão-idiomas'>    
+                    <MdOutlineLanguage/>
+                    <p>PT,BR</p>
+                    <MdArrowDropDown/>
+                </div>
+            </>
+            
+
 
             <div className='login'>
                 <div className='login-text'>

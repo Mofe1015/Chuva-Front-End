@@ -1,14 +1,23 @@
 import React from 'react';
 import './SideMenu.css';
+import { MdCancel } from "react-icons/md";
+
+
+
 
 
 function SideMenuTop(){
+    function hideSideMenu(){
+        document.getElementById('sidemenuid').style.display = "none"
+    }
     return(
         <div className='side-menu-top'>  
             <div className='Rectangle-239'>
                 <p>
                     SLACA 2019
                 </p>
+                <MdCancel className='hidesidemenu' onClick={hideSideMenu}/>
+
             </div>
             <div className='dewey4'>
                 <img src={require('./images/dewey4.png') }></img>
