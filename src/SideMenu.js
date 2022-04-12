@@ -1,5 +1,5 @@
 import React from 'react';
-import './SideMenu.css';
+import './Styling/SideMenu.css';
 import { MdCancel } from "react-icons/md";
 
 

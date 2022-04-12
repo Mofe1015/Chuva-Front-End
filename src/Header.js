@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './Styling/Header.css';
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineLanguage, MdArrowDropDown } from "react-icons/md";
 

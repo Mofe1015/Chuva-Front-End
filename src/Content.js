@@ -1,5 +1,5 @@
 import React from 'react';
-import './Content.css';
+import './Styling/Content.css';
 
 
 function TopContent(){

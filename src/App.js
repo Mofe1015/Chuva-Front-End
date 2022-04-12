@@ -1,5 +1,5 @@
 
-import './App.css';
+import './Styling/App.css';
 import SideMenu from './SideMenu';
 import Body from './Body';
 function App() {

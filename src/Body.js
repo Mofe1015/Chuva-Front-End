@@ -1,5 +1,5 @@
 import React from 'react';
-import './Body.css';
+import './Styling/Body.css';
 import Header from './Header';
 import Content from './Content';
 
