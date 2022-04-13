@@ -186,10 +186,6 @@
     overflow: hidden;
 }
 
-.detalhes1::-webkit-scrollbar{
-    width: 5px;
-    background-color: #ED7839;
-}
 .detalhes-header{
     background-color: #FDF1EB;
     display: flex;

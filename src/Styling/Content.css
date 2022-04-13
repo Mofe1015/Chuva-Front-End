@@ -4,6 +4,10 @@
     padding-left: 50px;
     padding-right: 50px;
     overflow: hidden;
+    overflow-y: scroll;
+}
+.content::-webkit-scrollbar{
+    display: none;
 }
 
 @media only screen and (max-width: 1200px) {

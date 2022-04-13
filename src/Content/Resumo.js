@@ -6,7 +6,9 @@ import { IoMdDownload } from "react-icons/io";
 function Resumo(){
     return(
         <div className='resumo'>
-            mofe
+            <div className='resumo-header'>
+                Resumo
+            </div>
         </div>
     )
 }
