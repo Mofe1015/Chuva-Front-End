@@ -48,6 +48,7 @@
 }
 
 .menu-item-desaivado{
+    transition: 0.2s;
     background-color: white;
     width: 195px;
     height: 35px;
@@ -57,6 +58,7 @@
     padding-left: 22px;
 }
 .menu-item-ativado{
+    transition: 0.2s;
     background-color: #FDF1EB;
     border-left: 4px solid #ED7839 ;
     padding-left: 18px;
