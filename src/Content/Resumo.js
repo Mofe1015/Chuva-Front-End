@@ -9,15 +9,13 @@ function Resumo(){
         // expanding resumo 
         if (expand == true){
             document.getElementById('resumoid').style.transition = '0.2s'
-            document.getElementById('resumoid').style.maxHeight = '450px'
-            document.getElementById('resumoid').style.height = '450px'
+            document.getElementById('resumoid').style.maxHeight = '1200px'
             document.getElementById('vermaisid').style.display = 'none'
         } 
         // collapsing resumo
         else{
             document.getElementById('resumoid').style.transition = '0.2s'
             document.getElementById('resumoid').style.maxHeight = '189px'
-            document.getElementById('resumoid').style.height = '189px'
             document.getElementById('vermaisid').style.display = 'flex'
         }
         // updating resumo state
@@ -30,6 +28,7 @@ function Resumo(){
             <div className='resumo-header'>
                 Resumo
             </div>
+            <div id='vermaisid' className='resumo-body-ver-mais'>....<p>ver mais</p></div>
             <div className='resumo-body'>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
@@ -38,7 +37,6 @@ function Resumo(){
                 <p>
                     Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
                 </p>
-                <div id='vermaisid' className='resumo-body-ver-mais'>....<p>ver mais</p></div>
                 <p>
                     Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
                 </p>

@@ -66,7 +66,7 @@ function TopContent(){
                             <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "50px"}}>¹Universidade Estadual de Campinas</p>
                             <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "0px"}}>²Universidade de São Paulo</p>
                             <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "0px"}}>³Instituto Nacional de Pesquisas Espaciais</p>
-                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginBottom: "50px"}}>⁴Universidade Federal do Rio de Janeiro</p>
+                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginBottom: "0px"}}>⁴Universidade Federal do Rio de Janeiro</p>
                         </ul>
                         
                         

@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     width: 92%;
-    height: 189px;
     max-height: 189px;
     border: #ECECEC 1px solid;
     border-radius: 5px;
@@ -26,10 +25,14 @@
     font-size: 20px;
     line-height: 25px;
 }
-
+.resumo-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .resumo-body > * {
     margin: 0;
-    margin-top: 20px;
+    margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
     font: Quicksand;
@@ -37,13 +40,15 @@
     font-weight: 300;
     line-height: 21.33px;
     color: #5C5C5C;
+    margin-top: auto;
 }
 .resumo-body-ver-mais {
+    margin: 0;
     position: relative;
     color: black;
     display: flex;
     background-color: white;
-    margin-top: -43px;
+    top: 115px;
     margin-left: 92.5%;
     margin-right: -92.5%;
 }
@@ -56,6 +61,11 @@
 @media only screen and (max-width: 1200px) {
     .resumo{
         width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
+    .resumo-body-ver-mais {
+        top: 125px;
+        right: 47px;
+    }
+
 }
