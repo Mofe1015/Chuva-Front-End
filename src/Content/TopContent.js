@@ -25,21 +25,52 @@ function TopContent(){
                         </div>
                     </div>
                 </div>
-  
             </div>
+
             <div className='details-download-div'>
                 <div className='details-download-btns-div'>
+
                     <button className='download-btn'>
                         <IoMdDownload className='download-icon'/>
                         <p>Download</p>
-                        
                     </button>
+
                     <button className='star-btn'>
                         <MdStar/>
                     </button>
+
                     <button className='joi-btn'>
-                        <img className='' src={require('../images/doi.png') }></img>
+                        <img src={require('../images/doi.png') }></img>
                     </button>
+                </div>
+
+                <p className='citação'>COMO CITAR ESSE TRABALHO?</p>
+
+                <div className='detalhes'>
+                    <div className='detalhes-header'>
+                        Detalhes
+                    </div>
+                    <div className='detalhes-body'>
+                        <p className='detalhes-body-txt'>Tipo de Apresentação: <strong>Pôster</strong></p>
+                        <p className='detalhes-body-txt'>Eixo temático: <strong>Alimentação e saúde (AS)</strong></p>
+                        <p className='detalhes-body-txt'>Palavras-chaves <strong>Alimentos funcionais, alimentação escolar.</strong></p>
+                        
+                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "50px"}}><strong>Autores</strong></p>
+                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Galileo Galilei</p>
+                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Berta Lange de Morretes</p>
+                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Isaac Newton</p>
+                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Cesar Lattes</p>
+                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Stephen Hawking</p>
+                       
+                        <ul className='detalhes-body-txt-schools'>
+                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "50px"}}>Universidade Estadual de Campinas</p>
+                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "0px"}}>Universidade de São Paulo</p>
+                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "0px"}}>Instituto Nacional de Pesquisas Espaciais</p>
+                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginBottom: "100px"}}>Universidade Federal do Rio de Janeiro</p>
+                        </ul>
+                        
+                        
+                    </div>
                 </div>
             </div>
         </div>
