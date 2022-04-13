@@ -1,5 +1,7 @@
 import React from 'react';
 import './Styling/Content.css';
+import { IoMdDownload } from "react-icons/io";
+import { MdStar } from "react-icons/md";
 
 
 function TopContent(){
@@ -27,7 +29,19 @@ function TopContent(){
   
             </div>
             <div className='details-download-div'>
-                details download
+                <div className='details-download-btns-div'>
+                    <button className='download-btn'>
+                        <IoMdDownload className='download-icon'/>
+                        <p>Download</p>
+                        
+                    </button>
+                    <button className='star-btn'>
+                        <MdStar/>
+                    </button>
+                    <button className='joi-btn'>
+                        <img className='' src={require('./images/doi.png') }></img>
+                    </button>
+                </div>
             </div>
         </div>
     )
