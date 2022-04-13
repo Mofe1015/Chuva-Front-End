@@ -4,14 +4,23 @@ import { IoMdDownload } from "react-icons/io";
 
 
 function Resumo(){
-    function expandResumo(){
-        document.getElementById('resumoid').style.transition = '0.2s'
-        document.getElementById('resumoid').style.maxHeight = '450px'
-        document.getElementById('resumoid').style.height = '450px'
-
+    const [expand, setExpand] = React.useState(true)
+    function expandcollapse(){
+        if (expand == true){
+            document.getElementById('resumoid').style.transition = '0.2s'
+            document.getElementById('resumoid').style.maxHeight = '450px'
+            document.getElementById('resumoid').style.height = '450px'
+        } else{
+            document.getElementById('resumoid').style.transition = '0.2s'
+            document.getElementById('resumoid').style.maxHeight = '189px'
+            document.getElementById('resumoid').style.height = '189px'
+        }
+        setExpand(() => !expand);
     }
+    
+    
     return(
-        <div id='resumoid' className='resumo ' onClick={expandResumo}>
+        <div id='resumoid' className='resumo ' onClick={expandcollapse }>
             <div className='resumo-header'>
                 Resumo
             </div>
