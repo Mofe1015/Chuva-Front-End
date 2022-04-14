@@ -34,8 +34,7 @@
 .discus-body-sect1{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 40%;
+    width: 97%;
     border-bottom:#E7E7E7 1px solid; ;
 }
 
@@ -99,6 +98,68 @@
     height: 20px;
     margin-right: 10px;
 }
+
+
+ /*                                       CRIAR NOVO TOPICO                                                            */
+.create-new-topic{
+    transition: 0.2ms;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-new-topic-txt1{
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17.5px;
+    color: #5C5C5C;
+}
+
+.assunto-conteudo-txt{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18.75px;
+    color: #ED7839;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.assunto-input{
+    height: 39px;
+    border: #CCCCCC solid 1px;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.conteudo-content{
+    width: 100%;
+    overflow: hidden;
+    border: #CCCCCC solid 1px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.conteudo-input{
+    height: 85px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 0px;
+    resize: none;
+}
+
+.enviar-div{
+    width: 99.8%;
+    height: 31px;
+    border: 1px solid rgb(80, 79, 79);
+    border-radius: 0 0 4px 4px;
+    background-color: #CCCCCC;
+}
+ /*                                       CRIAR NOVO TOPICO                                                            */
+
+
 @media only screen and (max-width: 1200px) {
     .discussoes{
         width: 100%;
@@ -113,5 +174,9 @@
 
     .discus-body-sect1-txt2{
         width: 90%;
+    }
+
+    .create-new-topic{
+        width: 95%;
     }
 }
