@@ -2,14 +2,14 @@ import React from 'react';
 import './ContentStyling/Discussoes.css';
 import { HiPlus } from "react-icons/hi";
 
-let Topic, setTopic
+let newTopic, setNewTopic
 
-function Default(){
+function DefaultNewTopic(){
 
     function createNewTopic(){
-        setTopic(() => <CreateTopic/>)
+        setNewTopic(() => <CreateNewTopic/>)
     }
-    
+
     return(
         <>
             <p className='discus-body-sect1-txt1'>Compartilhe suas ideias ou dúvidas com os autores!</p>
@@ -35,10 +35,10 @@ function Default(){
     )
 };
 
-function CreateTopic(){
+function CreateNewTopic(){
 
     function enviarTopic(){
-        setTopic(() => <Default/>)
+        setNewTopic(() => <DefaultNewTopic/>)
     }
 
     function makeBold(){
@@ -80,16 +80,30 @@ function CreateTopic(){
     )
 }
 
+function Topics(){
+    return(
+        <div className='topics'>
+            mofe
+        </div>
+    )
+}
 function Discussoes(){
-    [Topic, setTopic] = React.useState(<Default/>)
+
+    [newTopic, setNewTopic] = React.useState(<DefaultNewTopic/>)
     return(
         <div className='discussoes'>
+
             <div className='discussoes-header'>
                 Discussões
             </div>
+
             <div className='discussoes-body'>
                 <div className='discus-body-sect1'>
-                    {Topic}
+                    {newTopic}
+                </div>
+                <div className='discus-body-sect2'>
+                    <Topics/>
+                    <Topics/>
                 </div>
             </div>
             
