@@ -5,9 +5,11 @@ import { HiPlus } from "react-icons/hi";
 let Topic, setTopic
 
 function Default(){
+
     function createNewTopic(){
         setTopic(() => <CreateTopic/>)
     }
+    
     return(
         <>
             <p className='discus-body-sect1-txt1'>Compartilhe suas ideias ou dúvidas com os autores!</p>
@@ -34,6 +36,29 @@ function Default(){
 };
 
 function CreateTopic(){
+
+    function enviarTopic(){
+        setTopic(() => <Default/>)
+    }
+
+    function makeBold(){
+        var font =  document.getElementById('conteudo-input-id').style
+        if (font.fontWeight != 'bold'  ){
+            font.fontWeight = 'bold'
+        }else{
+            font.fontWeight = 'normal'
+        }
+    }
+
+    function makeItalic(){
+        var font =  document.getElementById('conteudo-input-id').style
+        if (font.fontStyle != 'italic'  ){
+            font.fontStyle = 'italic'
+        }else{
+            font.fontStyle = 'normal'
+        }
+    }
+
     return(
         <div className='create-new-topic'>
             <p className='create-new-topic-txt1'>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
@@ -43,11 +68,11 @@ function CreateTopic(){
             
             <p className='assunto-conteudo-txt'>Conteúdo</p>
             <div className='conteudo-content'>
-                <textarea className='conteudo-input'></textarea>
+                <textarea id='conteudo-input-id' className='conteudo-input'></textarea>
                 <div className='enviar-div'>
-                    <img src={require('./ContentImages/bold.png') }></img>
-                    <img src={require('./ContentImages/italic.png') }></img>
-                    <button className='enviar-tópico-btn'>Enviar</button>
+                    <img src={require('./ContentImages/bold.png')} onClick={makeBold} />
+                    <img src={require('./ContentImages/italic.png')} onClick={makeItalic}/>
+                    <button className='enviar-tópico-btn' onClick={enviarTopic}>Enviar</button>
                 </div>
             </div>
             

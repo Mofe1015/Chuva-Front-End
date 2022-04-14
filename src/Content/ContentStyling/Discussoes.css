@@ -149,6 +149,7 @@
     padding: 2px;
     margin-bottom: 0px;
     resize: none;
+    font-size: 16px;
 }
 .conteudo-input:focus{
     outline: none;
@@ -194,10 +195,23 @@
     .discussoes{
         width: 100%;
     }
-    
+
+    .discussoes-body{
+        padding: 0%;
+        padding-top: 20px;
+    }
+
+    .discus-body-sect1{
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 97%;
+    }
+
     .discus-body-sect1-txt1{
         text-align: center;
     }
+
     .discus-body-sect1-imgs{
         width: 100%;
     }
@@ -206,8 +220,10 @@
         width: 90%;
     }
 
-    .create-new-topic{
-        width: 95%;
+    .criar-tópico-btn{
+        margin-top: 15px;
+        margin-bottom: -15px;
     }
+
     
 }
