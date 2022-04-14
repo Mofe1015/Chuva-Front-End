@@ -45,7 +45,9 @@ function CreateTopic(){
             <div className='conteudo-content'>
                 <textarea className='conteudo-input'></textarea>
                 <div className='enviar-div'>
-                    mofe
+                    <img src={require('./ContentImages/bold.png') }></img>
+                    <img src={require('./ContentImages/italic.png') }></img>
+                    <button className='enviar-tópico-btn'>Enviar</button>
                 </div>
             </div>
             
