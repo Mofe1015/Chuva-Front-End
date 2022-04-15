@@ -82,21 +82,55 @@ function CreateNewTopic(){
     )
 }
 
-function TopicsExtended(props){
-    return(
-        <div className='extended-rectangle1'>
-                    <div className='rectangle1-header'>
-                        <p className='header-name'>{props.name}</p>
-                        <p className='header-tittle'>{props.tittle}</p>
-                        <FaCheckDouble className='header-check'/>
-                    </div>
-                    <div className='rectangle-body'>
-                        <p>{props.content}</p>
-                        <p>{props.content2}</p>
-                    </div>
+function TopicsExtended(){
+    
+    function ExtendedRectangle1(props){
+        return(
+            <div className='extended-rectangle1'>
+                <div className='rectangle1-header'>
+                    <p className='header-name'>{props.name}</p>
+                    <p className='header-tittle'>{props.tittle}</p>
+                    <FaCheckDouble className='header-check'/>
                 </div>
+                <div className='rectangle-body'>
+                    <p>{props.content}</p>
+                    <p>{props.content2}</p>
+                </div>
+            </div>
+        )
+    }
+    return(
+        <div id='topics-extended-id' className='topics-extended'>
+            <ExtendedRectangle1
+                name = {'Adriano da Silva'}
+                tittle = {'Autor'}
+                content = {'Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão eimpacto de processo formativo situado impacto de processo formativo processo.'}
+            />
+
+            <div className='extended-rectangle2'>
+                <p className='header-name' >Carlos Henrique Santos</p>
+                <div className='rectangle-body'>
+                    <p  >Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. </p>
+                    <p>Obrigada pela resposta, muito interessante o seu trabalho!</p>
+                </div>
+            </div>
+
+            <ExtendedRectangle1
+                name = {'Carlos Henrique Santos'}
+                tittle = {'Coautor'}
+                content = {'Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
+                content2 = {'Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
+            />
+
+            <ExtendedRectangle1
+                name = {'Ana Carolina'}
+                tittle = {'Coautor'}
+                content = {'Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
+            />
+        </div>
     )
 }
+
 function Topics(){
     return(
         <div className='topics'>
@@ -115,38 +149,10 @@ function Topics(){
                     <p className='topics-btm-itms-txt'>1 resposta</p>
                 </div>
             </div>
+            <TopicsExtended/>
            
 
-            <div id='topics-extended-id' className='topics-extended'>
-                <TopicsExtended
-                    name = {'Adriano da Silva'}
-                    tittle = {'Autor'}
-                    content = {'Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão eimpacto de processo formativo situado impacto de processo formativo processo.'}
-                />
-
-                <div className='extended-rectangle2'>
-                    <p className='header-name' >Carlos Henrique Santos</p>
-                    <div className='rectangle-body'>
-                        <p  >Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. </p>
-                        <p>Obrigada pela resposta, muito interessante o seu trabalho!</p>
-                    </div>
-                </div>
-
-                <TopicsExtended
-                    name = {'Carlos Henrique Santos'}
-                    tittle = {'Coautor'}
-                    content = {'Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
-                    content2 = {'Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
-                />
-
-                <TopicsExtended
-                    name = {'Ana Carolina'}
-                    tittle = {'Coautor'}
-                    content = {'Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
-                />
-                
-                
-            </div>
+            
         </div>
     )
 }
