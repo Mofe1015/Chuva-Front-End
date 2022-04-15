@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContentStyling/Discussoes.css';
-import { HiPlus } from "react-icons/hi";
+import { HiPlus, HiDotsVertical, HiHeart } from "react-icons/hi";
 
 let newTopic, setNewTopic
 
@@ -91,12 +91,16 @@ function Topics(){
                 de processo formativo situado impacto de processo formativo processo...
             </p>
             <div className='topics-btm-itms'>
-                mofe
+                <HiDotsVertical className='topics-menu-btn'/>
+                <button className='topics-like-btn'><HiHeart/></button>
+                <p className='topics-btm-itms-txt'>1 like</p>
+                <p className='topics-btm-itms-txt'>1 resposta</p>
             </div>
 
         </div>
     )
 }
+
 function Discussoes(){
 
     [newTopic, setNewTopic] = React.useState(<DefaultNewTopic/>)

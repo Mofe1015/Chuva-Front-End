@@ -4,7 +4,7 @@
     height: 100vh;
     overflow-y: hidden;
     overflow-y: scroll;
-;
+    scroll-behavior: smooth;
     
 }
 .body::-webkit-scrollbar {
