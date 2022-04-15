@@ -29,7 +29,6 @@ function TopContent(){
 
             <div className='details-download-div'>
                 <div className='details-download-btns-div'>
-
                     <button className='download-btn'>
                         <IoMdDownload className='download-icon'/>
                         <p>Download</p>
@@ -52,21 +51,23 @@ function TopContent(){
                     </div>
                     <div className='detalhes-body'>
                         <p className='detalhes-body-txt'>Tipo de Apresentação: <strong>Pôster</strong></p>
-                        <p className='detalhes-body-txt'>Eixo temático: <strong>Alimentação e saúde (AS)</strong></p>
+                        <p className='detalhes-body-txt'>Eixo temático: <strong>Alimentação e saúde (AS)</strong></p> 
                         <p className='detalhes-body-txt'>Palavras-chaves <strong>Alimentos funcionais, alimentação escolar.</strong></p>
                         
-                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "50px"}}><strong>Autores</strong></p>
-                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Galileo Galilei¹</p>
-                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Berta Lange de Morretes²</p>
-                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Isaac Newton³</p>
-                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Cesar Lattes¹</p>
-                        <p className='detalhes-body-txt' style={{fontSize : "15px", marginTop: "0px"}}>Stephen Hawking⁴</p>
-                       
+                        <ul className='detalhes-body-txt-autores'>
+                            <li><strong>Autores</strong></li>
+                            <li>Galileo Galilei¹</li>
+                            <li>Berta Lange de Morretes²</li>
+                            <li>Isaac Newton³</li>
+                            <li>Cesar Lattes¹</li>
+                            <li>Stephen Hawking⁴</li>
+                        </ul>
+                        
                         <ul className='detalhes-body-txt-schools'>
-                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "50px"}}>¹Universidade Estadual de Campinas</p>
-                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "0px"}}>²Universidade de São Paulo</p>
-                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginTop: "0px"}}>³Instituto Nacional de Pesquisas Espaciais</p>
-                            <p className='detalhes-body-txt' style={{fontSize : "13px", marginBottom: "0px"}}>⁴Universidade Federal do Rio de Janeiro</p>
+                            <li>¹Universidade Estadual de Campinas</li>
+                            <li>²Universidade de São Paulo</li>
+                            <li>³Instituto Nacional de Pesquisas Espaciais</li>
+                            <li>⁴Universidade Federal do Rio de Janeiro</li>
                         </ul>
                         
                         

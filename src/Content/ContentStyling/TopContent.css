@@ -210,7 +210,7 @@
 }
 .detalhes-body::-webkit-scrollbar-thumb {
     width: 3px;
-    height: 5   0%;
+    height: 50%;
     background-color: #BFBFBF;
   }
 .detalhes-body::-webkit-scrollbar-track {
@@ -225,14 +225,35 @@
     margin: 0;
     margin-top: 5px;
 }
+
+.detalhes-body-txt-autores{
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+.detalhes-body-txt-autores  > *{
+    color: #5C5C5C;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .detalhes-body-txt-schools{
     margin: 0;
+    margin-top: 50px;
     margin-bottom: 500px;
     padding: 0;
     
 }
 .detalhes-body-txt-schools  > *{
+    color: #5C5C5C;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
     font-weight: 100;
+    list-style: none;
 }
 @media only screen and (max-width: 1200px) {
     .top-content{

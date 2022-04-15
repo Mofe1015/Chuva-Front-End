@@ -83,7 +83,17 @@ function CreateNewTopic(){
 function Topics(){
     return(
         <div className='topics'>
-            mofe
+           <p className='topics-txt1'>Assunto da pergunta aparece aqui</p>
+           <p className='topics-txt2'>Carlos Henrique Santos</p>
+           <p className='topics-txt3'>
+                Comecinho da pergunta aparece aqui resente 
+                relato inscreve-se no campo da análise da dimensão e impacto 
+                de processo formativo situado impacto de processo formativo processo...
+            </p>
+            <div className='topics-btm-itms'>
+                mofe
+            </div>
+
         </div>
     )
 }

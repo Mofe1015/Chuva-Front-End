@@ -200,6 +200,7 @@
 }
 
 .topics{
+    cursor: pointer;
     background: #FFFFFF;
     border: 1px solid #E7E7E7;
     box-sizing: border-box;
@@ -207,6 +208,37 @@
     border-radius: 4px;
     height: 148px;
     margin-top: 20px;
+    padding-left: 15px;
+}
+
+.topics-txt1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ED7839;
+    margin-bottom: 0;
+}
+
+.topics-txt2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.topics-txt3{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    color:#4D4D4D;
+    margin-top: 10px;
+}
+
+.topics-btm-itms{
+    background-color: red;
+    display: flex;
 }
  /*                                             TOPICO                                                            */
 
@@ -243,6 +275,13 @@
     .criar-tópico-btn{
         margin-top: 15px;
         margin-bottom: -15px;
+    }
+
+    .discus-body-sect2{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        width: 98%;
     }
 
     
