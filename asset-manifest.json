@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Chuva-Front-End/static/css/main.e69ccac1.css",
+    "main.css": "/Chuva-Front-End/static/css/main.fc7b006b.css",
     "main.js": "/Chuva-Front-End/static/js/main.b10b88fb.js",
     "static/media/dewey1.png": "/Chuva-Front-End/static/media/dewey1.10aaf133896fb52bebc9.png",
     "static/media/dewey4.png": "/Chuva-Front-End/static/media/dewey4.4f8311cbeecac01bcec7.png",
@@ -10,11 +10,11 @@
     "static/media/img02.png": "/Chuva-Front-End/static/media/img02.f972a6a57e9661d016e6.png",
     "static/media/image.png": "/Chuva-Front-End/static/media/image.9a6673c8a11ce6ac483e.png",
     "index.html": "/Chuva-Front-End/index.html",
-    "main.e69ccac1.css.map": "/Chuva-Front-End/static/css/main.e69ccac1.css.map",
+    "main.fc7b006b.css.map": "/Chuva-Front-End/static/css/main.fc7b006b.css.map",
     "main.b10b88fb.js.map": "/Chuva-Front-End/static/js/main.b10b88fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.e69ccac1.css",
+    "static/css/main.fc7b006b.css",
     "static/js/main.b10b88fb.js"
   ]
 }
