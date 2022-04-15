@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# SLACA 2019
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visite em >> [SLACA 2019](https://mofe1015.github.io/Chuva-Front-End/)
 
-## Available Scripts
+Olá, Gotas
+Este é um clone totalmente responsivo e funcional do projeto front-end, feito com REACT, JAVASCRIPT, CSS, HTML.
 
-In the project directory, you can run:
+Todas as feuturas solicitadas são implementadas e muito mais, como tornar o texto em negrito e itálico, expandir todos os tópicos individualmente e menu DROP-DOWN responsivo
 
-### `npm start`
+The web app is deployed and available to test on any platform at: [SLACA2019.COM](https://mofe1015.github.io/Chuva-Front-End/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## NOTICE!!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    This is just a Project WebApp, certain  features may not be  functional
 
-### `npm test`
+## Design ❄👌
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Front End: HTML, CSS, Vanilla JS, REACTjs
+- Back End: JavaScript, API
 
-### `npm run build`
+## Building 🏢🚀
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone o repositório para seu computador local.
+2. Certifique-se de ter o Node, Npm e seus pacotes necessários instalados.
+3. Abra e execute o projeto com VS Code ou Android Studio 3.x (usando: "npm start" no terminal integrado).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contribution 🍕🗺
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Solicitações de recursos, problemas, solicitações de pull e perguntas são bem-vindas.
 
-### `npm run eject`
+## Bugs 😭🐛
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Se você encontrar algum bug ou estiver enfrentando algum problema com o código, não hesite em entrar em contato comigo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+email : mofeomotosho@gmail.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### MOFE
