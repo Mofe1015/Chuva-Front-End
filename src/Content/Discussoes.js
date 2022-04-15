@@ -4,7 +4,7 @@ import { HiPlus, HiDotsVertical, HiHeart } from "react-icons/hi";
 import { FaCheckDouble } from "react-icons/fa";
 
 
-let newTopic, setNewTopic
+let newTopic, setNewTopic   
 
 // Default layout of Top Discussoes Section 1 (JSX)
 function DefaultNewTopic(){

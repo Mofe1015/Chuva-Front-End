@@ -43,8 +43,6 @@ function Header(){
                 </div>
             </>
             
-
-
             <div className='login'>
                 <div className='login-text'>
                     <p className='welcome-txt'>Bem vindo!</p>
@@ -61,4 +59,4 @@ function Header(){
     )
 };
 
-export default Header
+export default Header;

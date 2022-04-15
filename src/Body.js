@@ -5,7 +5,6 @@ import Content from './Content';
 import Footer from './Footer';
 
 
-
 function Body(){
     return(
         <body className='body'>

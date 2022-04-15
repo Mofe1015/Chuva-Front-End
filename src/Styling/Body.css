@@ -2,7 +2,7 @@
     margin-left: 220px;
     width: 100%;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
     

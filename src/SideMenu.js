@@ -3,7 +3,7 @@ import './Styling/SideMenu.css';
 import { MdCancel } from "react-icons/md";
 
 
-
+// Listening for platform
 window.addEventListener('resize', showSideMenu )
 
 // Hide side menu in mobile
@@ -42,19 +42,23 @@ function SideBar(){
     const [active, setActive] = React.useState("menuitm5")
     
     function select(evt){
+
         // Getting clicked menu item id
         var clickedId = evt.target.id
+
         setActive(prevActive => {
             // Deactivating old menu item
-            document.getElementById(prevActive).classList.remove("menu-item-ativado");;
+            document.getElementById(prevActive).classList.remove("menu-item-ativado");
+
             // Setting new clicked menu item id
             return(
                clickedId
-        )
+            )
         });
+
         // Activating new clicked menu item 
         document.getElementById(clickedId).classList.add("menu-item-ativado");
-    }
+    };
 
     return(
         <div className='side-bar'>

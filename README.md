@@ -16,7 +16,6 @@ The web app is deployed and available to test on any platform at: [SLACA2019.COM
 ## Design ❄👌
 
 - Front End: HTML, CSS, Vanilla JS, REACTjs
-- Back End: JavaScript, API
 
 ## Building 🏢🚀
 
