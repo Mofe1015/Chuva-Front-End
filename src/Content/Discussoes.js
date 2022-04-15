@@ -137,7 +137,7 @@ function Topics(props){
             <div className='topics-default'>
                 <p className='topics-txt1'>Assunto da pergunta aparece aqui</p>
                 <p className='topics-txt2'>Carlos Henrique Santos</p>
-                <p className='topics-txt3'>
+                <p className='topics-txt3' id={props.textid}>
                     Comecinho da pergunta aparece aqui resente 
                     relato inscreve-se no campo da análise da dimensão e impacto 
                     de processo formativo situado impacto de processo formativo processo...
@@ -151,21 +151,34 @@ function Topics(props){
             </div>
             <TopicsExtended
                 extendedid = {props.extendedid}
+                textid = {props.textid}
             />   
         </div>
     )
 }
+
 function expandTopic(evt){
     // getting id of clicked topic 
+    var textid = evt.target.id+'-text'
     var id = evt.target.id+'-extended'
     var extendedtopic = document.getElementById(id)
+    var extendedtext = document.getElementById(textid)
+    
+    const collapsetext = 'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...'
+    const expandtext = 'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?'
 
     // cheking and updating display state of extended topic
     if (extendedtopic.style.display != 'block'){
         extendedtopic.style.display = 'block'
-    }else{extendedtopic.style.display = 'none'}
+        extendedtext.textContent = expandtext
+    }
+    else{
+        extendedtopic.style.display = 'none'
+        extendedtext.textContent = collapsetext
+    }
     
 }
+
 function Discussoes(){
 
     [newTopic, setNewTopic] = React.useState(<DefaultNewTopic/>)
@@ -184,12 +197,14 @@ function Discussoes(){
                     <div className='topic-handler' id='topic1' onClick={expandTopic}>
                         <Topics
                             extendedid = 'topic1-extended'
+                            textid = 'topic1-text'
                         />
                     </div>
                     
                     <div className='topic-handler' id='topic2' onClick={expandTopic}>
                         <Topics
                             extendedid = 'topic2-extended'
+                            textid = 'topic2-text'
                         />
                     </div>
                 </div>
