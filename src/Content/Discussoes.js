@@ -1,6 +1,8 @@
 import React from 'react';
 import './ContentStyling/Discussoes.css';
 import { HiPlus, HiDotsVertical, HiHeart } from "react-icons/hi";
+import { FaCheckDouble } from "react-icons/fa";
+
 
 let newTopic, setNewTopic
 
@@ -80,23 +82,71 @@ function CreateNewTopic(){
     )
 }
 
+function TopicsExtended(props){
+    return(
+        <div className='extended-rectangle1'>
+                    <div className='rectangle1-header'>
+                        <p className='header-name'>{props.name}</p>
+                        <p className='header-tittle'>{props.tittle}</p>
+                        <FaCheckDouble className='header-check'/>
+                    </div>
+                    <div className='rectangle-body'>
+                        <p>{props.content}</p>
+                        <p>{props.content2}</p>
+                    </div>
+                </div>
+    )
+}
 function Topics(){
     return(
         <div className='topics'>
-           <p className='topics-txt1'>Assunto da pergunta aparece aqui</p>
-           <p className='topics-txt2'>Carlos Henrique Santos</p>
-           <p className='topics-txt3'>
-                Comecinho da pergunta aparece aqui resente 
-                relato inscreve-se no campo da análise da dimensão e impacto 
-                de processo formativo situado impacto de processo formativo processo...
-            </p>
-            <div className='topics-btm-itms'>
-                <HiDotsVertical className='topics-menu-btn'/>
-                <button className='topics-like-btn'><HiHeart/></button>
-                <p className='topics-btm-itms-txt'>1 like</p>
-                <p className='topics-btm-itms-txt'>1 resposta</p>
+            <div className='topics-default'>
+                <p className='topics-txt1'>Assunto da pergunta aparece aqui</p>
+                <p className='topics-txt2'>Carlos Henrique Santos</p>
+                <p className='topics-txt3'>
+                    Comecinho da pergunta aparece aqui resente 
+                    relato inscreve-se no campo da análise da dimensão e impacto 
+                    de processo formativo situado impacto de processo formativo processo...
+                </p>
+                <div className='topics-btm-itms'>
+                    <HiDotsVertical className='topics-menu-btn'/>
+                    <button className='topics-like-btn'><HiHeart/></button>
+                    <p className='topics-btm-itms-txt'>1 like</p>
+                    <p className='topics-btm-itms-txt'>1 resposta</p>
+                </div>
             </div>
+           
 
+            <div id='topics-extended-id' className='topics-extended'>
+                <TopicsExtended
+                    name = {'Adriano da Silva'}
+                    tittle = {'Autor'}
+                    content = {'Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão eimpacto de processo formativo situado impacto de processo formativo processo.'}
+                />
+
+                <div className='extended-rectangle2'>
+                    <p className='header-name' >Carlos Henrique Santos</p>
+                    <div className='rectangle-body'>
+                        <p  >Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. </p>
+                        <p>Obrigada pela resposta, muito interessante o seu trabalho!</p>
+                    </div>
+                </div>
+
+                <TopicsExtended
+                    name = {'Carlos Henrique Santos'}
+                    tittle = {'Coautor'}
+                    content = {'Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
+                    content2 = {'Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
+                />
+
+                <TopicsExtended
+                    name = {'Ana Carolina'}
+                    tittle = {'Coautor'}
+                    content = {'Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.'}
+                />
+                
+                
+            </div>
         </div>
     )
 }
