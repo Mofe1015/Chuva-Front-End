@@ -82,7 +82,7 @@ function CreateNewTopic(){
     )
 }
 
-function TopicsExtended(){
+function TopicsExtended(props){
     
     function ExtendedRectangle1(props){
         return(
@@ -100,7 +100,7 @@ function TopicsExtended(){
         )
     }
     return(
-        <div id='topics-extended-id' className='topics-extended'>
+        <div id={props.extendedid} className='topics-extended'>
             <ExtendedRectangle1
                 name = {'Adriano da Silva'}
                 tittle = {'Autor'}
@@ -131,7 +131,7 @@ function TopicsExtended(){
     )
 }
 
-function Topics(){
+function Topics(props){
     return(
         <div className='topics'>
             <div className='topics-default'>
@@ -149,14 +149,23 @@ function Topics(){
                     <p className='topics-btm-itms-txt'>1 resposta</p>
                 </div>
             </div>
-            <TopicsExtended/>
-           
-
-            
+            <TopicsExtended
+                extendedid = {props.extendedid}
+            />   
         </div>
     )
 }
+function expandTopic(evt){
+    // getting id of clicked topic 
+    var id = evt.target.id+'-extended'
+    var extendedtopic = document.getElementById(id)
 
+    // cheking and updating display state of extended topic
+    if (extendedtopic.style.display != 'block'){
+        extendedtopic.style.display = 'block'
+    }else{extendedtopic.style.display = 'none'}
+    
+}
 function Discussoes(){
 
     [newTopic, setNewTopic] = React.useState(<DefaultNewTopic/>)
@@ -172,8 +181,17 @@ function Discussoes(){
                     {newTopic}
                 </div>
                 <div className='discus-body-sect2'>
-                    <Topics/>
-                    <Topics/>
+                    <div className='topic-handler' id='topic1' onClick={expandTopic}>
+                        <Topics
+                            extendedid = 'topic1-extended'
+                        />
+                    </div>
+                    
+                    <div className='topic-handler' id='topic2' onClick={expandTopic}>
+                        <Topics
+                            extendedid = 'topic2-extended'
+                        />
+                    </div>
                 </div>
             </div>
             

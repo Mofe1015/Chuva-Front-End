@@ -73,6 +73,7 @@
     font-weight: 500 medium ;
     size: 15px;
     align-self: center;
+    pointer-events: none;
 }
 
 .show-side-menu{

@@ -1,7 +1,7 @@
 .App {
   background-color: transparent;
   display: flex;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 

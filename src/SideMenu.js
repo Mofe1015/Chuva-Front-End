@@ -4,13 +4,23 @@ import { MdCancel } from "react-icons/md";
 
 
 
+window.addEventListener('resize', showSideMenu )
 
+// Hide side menu in mobile
+function hideSideMenu(){
+    document.getElementById('sidemenuid').style.display = "none"
+}
+
+// Show side menu
+function showSideMenu(){
+    if(window.innerWidth > 1200){
+        document.getElementById('sidemenuid').style.display = "block"
+    }else{hideSideMenu()}
+    
+}
 
 function SideMenuTop(){
-    // Hide side menu in mobile
-    function hideSideMenu(){
-        document.getElementById('sidemenuid').style.display = "none"
-    }
+    
     return(
         <div className='side-menu-top'>  
             <div className='Rectangle-239'>

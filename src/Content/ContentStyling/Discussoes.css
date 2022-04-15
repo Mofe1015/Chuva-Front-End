@@ -275,10 +275,21 @@
     line-height: 18.62px;
     color: #757575;
 }
+
+.topic-handler{
+    cursor: pointer;
+}
+.topic-handler > *{
+    pointer-events: none;
+}
  /*                                             TOPICO                                                            */
  
  
  /*                                             TOPICO  EXTENDED                                                   */
+ .topics-extended{
+     transition: 0.5s;
+     display: none;
+ }
  .extended-rectangle1{
     border: 1px solid #E7E7E7;
     background-color: #F8F8F8;
