@@ -6,10 +6,12 @@ import { FaCheckDouble } from "react-icons/fa";
 
 let newTopic, setNewTopic
 
+// Default layout of Top Discussoes Section 1 (JSX)
 function DefaultNewTopic(){
 
     function createNewTopic(){
         setNewTopic(() => <CreateNewTopic/>)
+        document.getElementById('new-topic-id').style.display = 'none'
     }
 
     return(
@@ -37,10 +39,12 @@ function DefaultNewTopic(){
     )
 };
 
+//Criar Novo Topicos (JSX)
 function CreateNewTopic(){
 
     function enviarTopic(){
         setNewTopic(() => <DefaultNewTopic/>)
+        document.getElementById('new-topic-id').style.display = 'block'
     }
 
     function makeBold(){
@@ -82,6 +86,7 @@ function CreateNewTopic(){
     )
 }
 
+// Topicos extended (JSX)
 function TopicsExtended(props){
     
     function ExtendedRectangle1(props){
@@ -131,6 +136,7 @@ function TopicsExtended(props){
     )
 }
 
+// Topicos (JSX)
 function Topics(props){
     return(
         <div className='topics'>
@@ -157,6 +163,7 @@ function Topics(props){
     )
 }
 
+// Expanding topic (functionality)
 function expandTopic(evt){
     // getting id of clicked topic 
     var textid = evt.target.id+'-text'
@@ -179,6 +186,7 @@ function expandTopic(evt){
     
 }
 
+//Todo Discussoes (JSX)
 function Discussoes(){
 
     [newTopic, setNewTopic] = React.useState(<DefaultNewTopic/>)
@@ -194,6 +202,16 @@ function Discussoes(){
                     {newTopic}
                 </div>
                 <div className='discus-body-sect2'>
+
+                     <div className='new-topic-handler' id='new-topic-id'>
+                         <div className='new-topic'>
+                             <FaCheckDouble/>
+                             <p>Aguardando feedback dos autores</p>
+                             <p className='new-topic-txt2'>Editar tópico </p>
+                         </div>
+                        <Topics/>
+                    </div>
+
                     <div className='topic-handler' id='topic1' onClick={expandTopic}>
                         <Topics
                             extendedid = 'topic1-extended'

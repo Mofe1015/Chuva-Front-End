@@ -11,7 +11,7 @@ function Header(){
 
 
     return(
-        <div className='body-header'>
+        <header className='body-header'>
             
             <div  className='show-side-menu'>
                 <AiOutlineMenu className='menu-drop-down' onClick={showSideMenu}/>
@@ -56,7 +56,7 @@ function Header(){
                 </div>
                 
             </div>
-        </div>
+        </header>
         
     )
 };

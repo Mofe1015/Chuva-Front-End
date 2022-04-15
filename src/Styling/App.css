@@ -2,6 +2,7 @@
   background-color: transparent;
   display: flex;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
