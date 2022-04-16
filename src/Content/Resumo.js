@@ -4,32 +4,25 @@ import './ContentStyling/Resumo.css';
 
 function Resumo(){
     const [expand, setExpand] = React.useState(true)
+    
 
-    function expandcollapse(){
-        // expanding resumo 
-        if (expand == true){
-            document.getElementById('resumoid').style.transition = '0.2s'
-            document.getElementById('resumoid').style.maxHeight = '1200px'
-            document.getElementById('vermaisid').style.display = 'none'
-        } 
-        // collapsing resumo
-        else{
-            document.getElementById('resumoid').style.transition = '0.2s'
-            document.getElementById('resumoid').style.maxHeight = '189px'
-            document.getElementById('vermaisid').style.display = 'flex'
-        }
-        // updating resumo state
-        setExpand(() => !expand);
-    }
-    
-    
-    return(
-        <div id='resumoid' className='resumo ' onClick={expandcollapse }>
-            <div className='resumo-header'>
-                Resumo
-            </div>
-            <div id='vermaisid' className='resumo-body-ver-mais'>....<p>ver mais</p></div>
-            <div className='resumo-body'>
+
+    const resumoCollapsed = (
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor,
+            mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et,
+            iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl,
+            vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.
+            Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
+            sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci 
+            id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien 
+            scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit
+            ametl accumsant... <strong className='vermais'>ver mais</strong>
+        </p>
+    )
+
+    const resumoExpanded = (
+        <>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
                 </p>
@@ -44,7 +37,33 @@ function Resumo(){
                 <p>
                     Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 </p>
-                
+        </>
+    )
+
+    const [resumoText, setResumoText] = React.useState(resumoCollapsed)
+
+
+    function expandcollapse(){
+        // expanding resumo 
+        if (expand == true){
+            setResumoText(() => resumoExpanded);
+        } 
+        // collapsing resumo
+        else{
+            setResumoText(() => resumoCollapsed);
+        }
+        // updating resumo state
+        setExpand(() => !expand);
+    }
+    
+    
+    return(
+        <div id='resumoid' className='resumo    ' onClick={expandcollapse }>
+            <div className='resumo-header'>
+                Resumo
+            </div>
+            <div className='resumo-body'>
+                {resumoText}
             </div>
         </div>
     )

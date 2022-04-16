@@ -7,11 +7,11 @@ import Footer from './Footer';
 
 function Body(){
     return(
-        <body className='body'>
+        <div className='body'>
             <Header/>
             <Content/>
             <Footer />
-        </body>
+        </div>
     )
 };
 

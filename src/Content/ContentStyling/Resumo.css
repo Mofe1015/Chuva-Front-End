@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     width: 92%;
-    max-height: 189px;
     border: #ECECEC 1px solid;
     border-radius: 5px;
     overflow: hidden;
@@ -29,6 +28,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-top: 10px;
+    transition: 0.2s;
 }
 .resumo-body > * {
     margin: 0;
@@ -37,23 +38,15 @@
     margin-left: 10px;
     font: Quicksand;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 21.33px;
     color: #5C5C5C;
     margin-top: auto;
 }
-.resumo-body-ver-mais {
-    margin: 0;
-    position: relative;
-    color: black;
-    display: flex;
-    background-color: white;
-    top: 115px;
-    margin-left: 92.5%;
-    margin-right: -92.5%;
-}
-.resumo-body-ver-mais > p{
-    margin: 0;
+
+.vermais{
+    float: right;
+    margin-right: 5px;
     color: #ED7839;
     font-weight: 500;
 }
