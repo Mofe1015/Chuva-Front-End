@@ -13,6 +13,6 @@ function Content(){
             <Discussoes/>
         </div>
     )
-}
+};
 
 export default Content;

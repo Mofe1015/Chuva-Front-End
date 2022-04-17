@@ -7,6 +7,7 @@ function TopContent(){
     return(
         <div className='top-content'>
             <div className='video-content'>
+
                 <div className='video-content-txt'>
                     <p>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </p>
                 </div>
@@ -69,7 +70,6 @@ function TopContent(){
                             <li>³Instituto Nacional de Pesquisas Espaciais</li>
                             <li>⁴Universidade Federal do Rio de Janeiro</li>
                         </ul>
-                        
                         
                     </div>
                 </div>

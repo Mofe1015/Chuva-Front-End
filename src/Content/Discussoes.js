@@ -5,6 +5,28 @@ import { FaCheckDouble } from "react-icons/fa";
 
 
 let newTopic, setNewTopic   
+// Expanding topic (functionality)
+function expandTopic(evt){
+    // getting id of clicked topic 
+    var textid = evt.target.id+'-text'
+    var id = evt.target.id+'-extended'
+    var extendedtopic = document.getElementById(id)
+    var extendedtext = document.getElementById(textid)
+    
+    const collapsetext = 'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...'
+    const expandtext = 'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?'
+
+    // cheking and updating display state of extended topic
+    if (extendedtopic.style.display != 'block'){
+        extendedtopic.style.display = 'block'
+        extendedtext.textContent = expandtext
+    }
+    else{
+        extendedtopic.style.display = 'none'
+        extendedtext.textContent = collapsetext
+    };
+    
+};
 
 // Default layout of Top Discussoes Section 1 (JSX)
 function DefaultNewTopic(){
@@ -54,7 +76,7 @@ function CreateNewTopic(){
         }else{
             font.fontWeight = 'normal'
         }
-    }
+    };
 
     function makeItalic(){
         var font =  document.getElementById('conteudo-input-id').style
@@ -63,18 +85,17 @@ function CreateNewTopic(){
         }else{
             font.fontStyle = 'normal'
         }
-    }
+    };
 
     return(
         <div className='create-new-topic'>
-            <p className='create-new-topic-txt1'>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-            
+            <p className='create-new-topic-txt1'>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>        
             <p className='assunto-conteudo-txt'>Assunto</p>
-            <input className='assunto-input' placeholder='Defina um tópico sucinto para notificar os autores...'></input>
+            <input className='assunto-input' placeholder='Defina um tópico sucinto para notificar os autores...'/>
             
             <p className='assunto-conteudo-txt'>Conteúdo</p>
             <div className='conteudo-content'>
-                <textarea id='conteudo-input-id' className='conteudo-input'></textarea>
+                <textarea id='conteudo-input-id' className='conteudo-input'/>
                 <div className='enviar-div'>
                     <img src={require('./ContentImages/bold.png')} onClick={makeBold} />
                     <img src={require('./ContentImages/italic.png')} onClick={makeItalic}/>
@@ -84,7 +105,7 @@ function CreateNewTopic(){
             
         </div>
     )
-}
+};
 
 // Topicos extended (JSX)
 function TopicsExtended(props){
@@ -103,7 +124,7 @@ function TopicsExtended(props){
                 </div>
             </div>
         )
-    }
+    };
     return(
         <div id={props.extendedid} className='topics-extended'>
             <ExtendedRectangle1
@@ -134,7 +155,7 @@ function TopicsExtended(props){
             />
         </div>
     )
-}
+};
 
 // Topicos (JSX)
 function Topics(props){
@@ -161,35 +182,13 @@ function Topics(props){
             />   
         </div>
     )
-}
-
-// Expanding topic (functionality)
-function expandTopic(evt){
-    // getting id of clicked topic 
-    var textid = evt.target.id+'-text'
-    var id = evt.target.id+'-extended'
-    var extendedtopic = document.getElementById(id)
-    var extendedtext = document.getElementById(textid)
-    
-    const collapsetext = 'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...'
-    const expandtext = 'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?'
-
-    // cheking and updating display state of extended topic
-    if (extendedtopic.style.display != 'block'){
-        extendedtopic.style.display = 'block'
-        extendedtext.textContent = expandtext
-    }
-    else{
-        extendedtopic.style.display = 'none'
-        extendedtext.textContent = collapsetext
-    }
-    
-}
+};
 
 //Todo Discussoes (JSX)
 function Discussoes(){
 
     [newTopic, setNewTopic] = React.useState(<DefaultNewTopic/>)
+
     return(
         <div className='discussoes'>
 
