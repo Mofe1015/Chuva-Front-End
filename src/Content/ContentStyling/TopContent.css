@@ -258,8 +258,27 @@
 @media only screen and (max-width: 1200px) {
     .top-content{
         flex-direction: column;
+        margin-top: 0;
         width: 100%;
     }
+    #header-text-cont-small{
+        height: 0; 
+        transition: 0.5s; 
+        background-color: #FDF1EB;
+        z-index: 1;
+        width: fit-content;
+        overflow: hidden; 
+    }
+    #header-text-cont-small > p{
+        padding: 4px;
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        font: Roboto;
+        font-weight: 400, regular;
+        font-size: 12px;
+    }
+
     .video-content{
         width: 100%;
     }

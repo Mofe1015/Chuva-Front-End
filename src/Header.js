@@ -9,6 +9,11 @@ function Header(){
         document.getElementById('sidemenuid').style.display = "block"
     }
 
+    function showDetails(){
+        document.getElementById('header-text-cont-small').style.height ='80px';
+        document.getElementById('header-text-cont-small').style.marginBottom ='-80px';
+        document.getElementById('show-details').style.transform ='rotate(180deg)';
+    }
 
     return(
         <header className='body-header'>
@@ -16,9 +21,9 @@ function Header(){
             <div  className='show-side-menu'>
                 <AiOutlineMenu className='menu-drop-down' onClick={showSideMenu}/>
             </div>
-
+            
             <>
-                <div className='header-title-small'>
+                <div className='header-title-small' onClick={showDetails}>
                     <p>
                         SLACA 2019
                         <AiFillCaretDown id='show-details'/>

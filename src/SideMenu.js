@@ -9,12 +9,15 @@ window.addEventListener('resize', showSideMenu )
 // Hide side menu in mobile
 function hideSideMenu(){
     document.getElementById('sidemenuid').style.display = "none"
+
+    
 }
 
 // Show side menu
 function showSideMenu(){
     if(window.innerWidth > 1200){
         document.getElementById('sidemenuid').style.display = "block"
+        document.getElementById('header-text-cont-small').style.display ='none';
     }else{hideSideMenu()}
     
 }

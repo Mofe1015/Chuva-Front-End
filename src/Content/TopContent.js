@@ -6,6 +6,13 @@ import { MdStar } from "react-icons/md";
 function TopContent(){
     return(
         <div className='top-content'>
+
+            <div id='header-text-cont-small'>
+                    <p >Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
+                    <p style={{fontSize:"15px"}}>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
+                    <p>ISSN: 1234-5678</p>
+            </div>
+
             <div className='video-content'>
 
                 <div className='video-content-txt'>

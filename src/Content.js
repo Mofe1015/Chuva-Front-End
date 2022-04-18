@@ -7,7 +7,7 @@ import Discussoes from './Content/Discussoes';
 
 function Content(){
     return(
-        <div className='content'>
+        <div className='content'>        
             <TopContent/>
             <Resumo/>
             <Discussoes/>
