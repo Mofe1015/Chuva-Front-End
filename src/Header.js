@@ -10,9 +10,17 @@ function Header(){
     }
 
     function showDetails(){
-        document.getElementById('header-text-cont-small').style.height ='80px';
-        document.getElementById('header-text-cont-small').style.marginBottom ='-80px';
-        document.getElementById('show-details').style.transform ='rotate(180deg)';
+        var moreDetails = document.getElementById('header-text-cont-small')
+        if(moreDetails.style.height == "80px"){        
+            moreDetails.style.height ='0px';
+            moreDetails.style.marginBottom ='0px';
+            document.getElementById('show-details').style.transform ='rotate(-360deg)'; 
+        }else{
+            moreDetails.style.height ='80px';
+            moreDetails.style.marginBottom ='-80px';
+            document.getElementById('show-details').style.transform ='rotate(180deg)'; 
+        }
+        
     }
 
     return(
@@ -38,9 +46,6 @@ function Header(){
             </>
 
             <>
-                <div className='botão-idiomas-small'>
-                    <MdOutlineLanguage/>
-                </div>
 
                 <div className='botão-idiomas'>    
                     <MdOutlineLanguage/>

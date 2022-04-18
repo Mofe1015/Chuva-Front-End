@@ -121,7 +121,7 @@
         color: black;
         justify-self: center;
         margin-left: 5px;
-       transition: 0.5s;
+        transition: 0.05s;
     }
     .header-text-cont{
         display: none;

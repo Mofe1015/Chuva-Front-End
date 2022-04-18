@@ -255,6 +255,9 @@
     font-weight: 100;
     list-style: none;
 }
+#header-text-cont-small{
+    display: none;
+}
 @media only screen and (max-width: 1200px) {
     .top-content{
         flex-direction: column;
@@ -262,7 +265,8 @@
         width: 100%;
     }
     #header-text-cont-small{
-        height: 0; 
+        display: block;
+        height: 0px; 
         transition: 0.5s; 
         background-color: #FDF1EB;
         z-index: 1;
