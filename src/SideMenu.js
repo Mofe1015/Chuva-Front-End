@@ -47,7 +47,7 @@ function SideBar(){
         var clickedId = evt.target.id
 
         setActive(prevActive => {
-            // Deactivating old menu item
+            // Deactivating previous active menu item
             if (prevActive != clickedId){
                 document.getElementById(prevActive).classList.remove("menu-item-ativado");
             }

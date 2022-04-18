@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styling/Header.css';
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiFillCaretDown } from "react-icons/ai";
 import { MdOutlineLanguage, MdArrowDropDown } from "react-icons/md";
 
 function Header(){
@@ -21,6 +21,7 @@ function Header(){
                 <div className='header-title-small'>
                     <p>
                         SLACA 2019
+                        <AiFillCaretDown id='show-details'/>
                     </p>
                 </div>
                 

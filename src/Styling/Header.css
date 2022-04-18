@@ -113,7 +113,14 @@
         align-items: center;
         font-size: 18px;
         margin-right: auto;
+        margin-left: 15px;
         font-weight: 500;
+        cursor: pointer;
+    }
+    #show-details{
+        color: black;
+        justify-self: center;
+        margin-left: 5px;
     }
     .header-text-cont{
         display: none;
