@@ -9,7 +9,7 @@ window.addEventListener('resize', showSideMenu )
 // Hide side menu in mobile
 function hideSideMenu(){
     document.getElementById('sidemenuid').style.display = "none"
-
+    document.getElementById('header-text-cont-small').style.display ='block';
     
 }
 
