@@ -1,0 +1,45 @@
+main {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter-cont{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: green;
+  } 
+  
+  .counter-header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  .counter-header > p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 12pt;
+  }
+  
+  .counter-body{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter-body > p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 90pt;
+  }
+  
+  
